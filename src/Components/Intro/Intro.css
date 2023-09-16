@@ -1,0 +1,64 @@
+
+
+.intro--container {
+    font-family: 'Press Start 2P', sans-serif;
+    color: var(--blue);
+    text-align: center;
+}
+
+.greeting--container {
+    height: 120vh;
+    display: flex;
+    flex-flow: column;
+    padding-right: 42.5vw;
+    padding-top: 45vh;
+    background-image: url(./src/assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about--container{
+    height: 65vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 20vw 5vh 20vw;
+    background: rgb(0,159,190);
+    background: linear-gradient(180deg, rgba(0,159,190,1) 0%, rgba(33,45,64,1) 100%);
+}
+
+.about--header {
+    color: var(--pink)
+}
+
+.skills--container {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills--headings {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: .85rem;
+}
+
+.skills--lists {
+    margin-top: 5vh;
+    text-align: left;
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.skills--lists li {
+    list-style: square;
+}
+
+
+

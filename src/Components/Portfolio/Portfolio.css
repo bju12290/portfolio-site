@@ -1,0 +1,23 @@
+.portfolio--container{
+    display: grid;
+    height: 150vh;
+    font-family: 'Press Start 2P', sans-serif;
+    color: var(--pink);
+    gap: 25vh;
+    padding: 100px;
+}
+
+.project--left--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project--right--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    height: 50vh;
+    width: auto;
+}

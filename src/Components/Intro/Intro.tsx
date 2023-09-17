@@ -16,21 +16,22 @@ export default function Intro() {
                 <p className="about--paragraph">{aboutMe}</p>
             </div>
         <div className="skills--container">
-        <div className="skills--headings">
-            <h3>Technical Skills</h3>
-            <h3>Soft Skills</h3>
-            </div>
             <div className="skills--lists">
-                <ul className="technical--skills--list">
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Bootstrap</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Git</li>
-                    <li>NPM</li>
-                </ul>
+                <div className="technical--skills--container">
+                    <ul className="technical--skills--list">
+                    <h3>Technical Skills</h3>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Bootstrap</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Git</li>
+                        <li>NPM</li>
+                    </ul>
+                </div>
+                <div className="soft--skills--container">
                 <ul className="soft--skills--list">
+                <h3>Soft Skills</h3>
                     <li>Passionate & Fast Learner</li>
                     <li>Problem Solver</li>
                     <li>Clean Code</li>
@@ -39,6 +40,7 @@ export default function Intro() {
                     <li>Disciplined</li>
                     <li>Consistent</li>
                 </ul>
+                </div>
             </div>
         </div>
         </div>

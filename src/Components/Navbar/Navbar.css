@@ -4,10 +4,12 @@
     font-family: 'Audiowide', cursive;
     color: var(--blue);
     z-index: 999;
+    text-shadow: 1px 2px 2px var(--gray);
 }
 
 .navbar--container a:hover {
   cursor: pointer;
+  text-shadow: 0px 0px 4px var(--pink);
 }
 
 .top--navbar--container {
@@ -31,8 +33,12 @@
     font-size: .75rem;
 }
 
-.menuToggle
-{
+.navbar a:hover {
+  text-shadow: 0px 0px 15px var(--off-white);
+}
+
+.menuToggle {
+    text-shadow: 0px 0px 4px var(--blue);
     margin-left: 25px;
     margin-top: -20px;
     -webkit-user-select: none;
@@ -42,14 +48,12 @@
     transform: translateY(0); 
 }
 
-.menuToggle a:hover
-{
+.menuToggle a:hover {
   color: var(--pink);
   cursor: pointer;
 }
 
-.menuToggle input
-{
+.menuToggle input {
   position: absolute;
   top: -7px;
   left: -5px;
@@ -61,8 +65,7 @@
   -webkit-touch-callout: none;
 }
 
-.menuToggle span
-{
+.menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -76,36 +79,36 @@
               opacity 0.55s ease;
 }
 
-.menuToggle span:first-child
-{
+.menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-.menuToggle span:nth-last-child(2)
-{
+.menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-.menuToggle input:checked ~ span
-{
+.menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: var(--blue);
+  box-shadow: 0px 0px 3px var(--blue);
 }
 
-.menuToggle input:checked ~ span:nth-last-child(3)
-{
+.menuToggle input:checked:hover ~ span {
+  background: var(--pink);
+  box-shadow: 0px 0px 3px var(--pink);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menuToggle input:checked ~ span:nth-last-child(2)
-{
+.menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-.menu
-{
+.menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
@@ -121,14 +124,12 @@
   border-radius: 5px;
 }
 
-.menu li
-{
+.menu li {
   padding: 10px 0;
   font-size: 22px;
 }
 
-.menuToggle input:checked ~ ul
-{
+.menuToggle input:checked ~ ul {
   transform: none;
 }
 
@@ -136,4 +137,29 @@
   opacity: 0;
   transform: translateY(-100%);
   pointer-events:none;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  .navbar--copyright {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar--copyright, .navbar--name {
+    display: none;
+  }
+
+  .top--navbar--container {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .top--navbar--container {
+    width: 90vw;
+    margin-left: 5vw;
+  }
 }

@@ -4,6 +4,7 @@
     font-family: 'Press Start 2P', sans-serif;
     color: var(--blue);
     text-align: center;
+    text-shadow: 3px 3px 2px var(--gray);
 }
 
 .greeting--container {
@@ -38,6 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 3px 3px 2px rgb(27, 27, 27);
 }
 
 .skills--headings {
@@ -58,7 +60,34 @@
 
 .skills--lists li {
     list-style: square;
+    margin-left: 2vw;
 }
 
+
+@media only screen and (max-width: 900px) {
+
+
+    .greeting--container {
+        padding: 3vw;
+        padding-top: 33vh;
+    }
+
+    .skills--container {
+        display: block;
+    }
+
+    .skills--lists {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 10vh;
+        gap: 5vh;
+        width: 85vw;
+    }
+
+    .skills--lists li {
+        margin-left: 5vw;
+    }
+  }
 
 

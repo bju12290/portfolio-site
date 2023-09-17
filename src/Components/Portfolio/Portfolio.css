@@ -1,23 +1,29 @@
 .portfolio--container{
     display: grid;
-    height: 150vh;
+    height: 300vh;
     font-family: 'Press Start 2P', sans-serif;
     color: var(--pink);
     gap: 25vh;
     padding: 100px;
 }
 
-.project--left--container {
+.project--left--container, .project--right--container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 20vw;
+}
+
+.project--left--container, .project--right--container h3 {
+    margin-left: 5vw;
 }
 
 .project--right--container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    margin-right: 5vw;
 }
 
 img {
-    height: 50vh;
+    height: 75vh;
     width: auto;
 }

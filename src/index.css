@@ -9,6 +9,8 @@
   font-family: 'Audiowide', cursive;
   line-height: 1.5;
   font-weight: 400;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {

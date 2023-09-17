@@ -1,0 +1,59 @@
+.contact--container {
+    width: 100vw;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    color: var(--blue);
+    font-family: 'Press Start 2P', sans-serif;
+    gap: 15px;
+}
+
+label {
+    margin-left: 15px;
+}
+
+textarea {
+    height: 335vh;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--off-white);
+    border-bottom-color: var(--blue);
+    border-bottom-width: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input:focus, textarea:focus {
+    border-bottom-color: var(--pink);
+    border-bottom-width: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.button--container{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--blue);
+    color: var(--pink);
+    padding: 10px;
+    width: 33%;
+    border-radius: 5px !important;
+    border-color: var(--blue)
+}
+
+button:active {
+    background-color: var(--pink);
+    color: var(--blue);
+}
+

@@ -1,4 +1,5 @@
 import './Portfolio.css'
+import lorem from '../../assets/lorem.png'
 
 export default function Portfolio() {
     return (
@@ -8,10 +9,10 @@ export default function Portfolio() {
                     <h3>Project Title</h3>
                     <p>Project Card</p>
                 </div>
-                <img src="./src/assets/lorem.png" />
+                <img src={lorem} />
             </div>
             <div className="project--right--container">
-                <img src="./src/assets/lorem.png" />
+                <img src={lorem} />
                 <div>
                     <h3>Project Title</h3>
                     <p>Project Card</p>
@@ -22,7 +23,7 @@ export default function Portfolio() {
                     <h3>Project Title</h3>
                     <p>Project Card</p>
                 </div>
-                <img src="./src/assets/lorem.png" />
+                <img src={lorem} />
             </div>
         </div>
     )

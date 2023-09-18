@@ -9,21 +9,21 @@ export default function Portfolio() {
                     <h3>Project Title</h3>
                     <p>Project Card</p>
                 </div>
-                <img src={lorem} />
+                <img className="img-fluid" src={lorem} />
             </div>
-            <div className="project--right--container">
-                <img src={lorem} />
-                <div>
+            <div className="project--left--container">
+                <div className="right--container--text">
                     <h3>Project Title</h3>
                     <p>Project Card</p>
                 </div>
+                <img className="img-fluid" src={lorem} />
             </div>
             <div className="project--left--container">
                 <div>
                     <h3>Project Title</h3>
                     <p>Project Card</p>
                 </div>
-                <img src={lorem} />
+                <img className="img-fluid" src={lorem} />
             </div>
         </div>
     )

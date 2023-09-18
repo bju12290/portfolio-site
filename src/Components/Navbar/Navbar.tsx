@@ -41,7 +41,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="menuToggle hidden">
-                <input type="checkbox" />
+                <input id="menu" type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>

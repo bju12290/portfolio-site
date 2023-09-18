@@ -23,7 +23,8 @@ export default function Contact() {
                 <input 
                     type="text" 
                     id="name" 
-                    name="name" 
+                    name="name"
+                    autoComplete="given-name"
                     required 
                         onFocus={() => handleInputFocus('name')}
                         onBlur={() => handleInputFocus(null)}
@@ -41,6 +42,7 @@ export default function Contact() {
                     type="email" 
                     id="email" 
                     name="email" 
+                    autoComplete="given-email"
                     required 
                         onFocus={() => handleInputFocus('email')}
                         onBlur={() => handleInputFocus(null)}
@@ -57,6 +59,7 @@ export default function Contact() {
                 <textarea 
                     id="message" 
                     name="message" 
+                    autoComplete="off"
                     required 
                         onFocus={() => handleInputFocus('message')}
                         onBlur={() => handleInputFocus(null)}>

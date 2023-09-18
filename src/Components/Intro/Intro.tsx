@@ -6,7 +6,7 @@ export default function Intro() {
 
     return (
     <>
-    <div className="intro--container">
+    <div className=".container-fluid intro--container">
         <div className="greeting--container">
             <h1 className="intro">Hi, I'm Brian!</h1>
             <h2>I'm a Web <span className="designer">Designer</span><span className="&"> & </span><span className="developer">Developer</span></h2>

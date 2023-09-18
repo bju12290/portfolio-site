@@ -63,3 +63,8 @@ button:active {
     color: var(--blue);
 }
 
+@media only screen and (max-width: 900px) {
+    button {
+        font-size: .7rem !important;
+    }
+}

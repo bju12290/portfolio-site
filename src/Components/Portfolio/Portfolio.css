@@ -1,6 +1,5 @@
 .portfolio--container{
     display: grid;
-    height: 300vh;
     font-family: 'Press Start 2P', sans-serif;
     color: var(--pink);
     gap: 25vh;
@@ -26,7 +25,29 @@
     margin-right: 5vw;
 }
 
-img {
-    height: 75vh;
-    width: auto;
+.right--container--text {
+    order: 1;
+    text-align: right;
 }
+
+img {
+    max-width: 100%;
+    min-width: 33vw;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .portfolio--container {
+        padding: 25px;
+    }
+    .project--left--container, .project--right--container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .right--container--text {
+        order: 0;
+        text-align: right;
+    }
+  }

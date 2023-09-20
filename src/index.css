@@ -6,17 +6,17 @@
   --dark-blue: #212D40;
   --off-white: #EAE1DF;
   --gray: #333333;
-  font-family: 'Audiowide', cursive;
-  line-height: 1.5;
-  font-weight: 400;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
   background-color: var(--dark-blue) !important;
+  font-family: 'Audiowide', cursive;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 100%;
 }
 
 .navbar--container a {
   all: unset;
 }
+

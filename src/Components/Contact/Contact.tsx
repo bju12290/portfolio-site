@@ -1,5 +1,9 @@
 import React from 'react'
 import './Contact.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
     const [focusedInput, setFocusedInput] = React.useState<string | null>(null);
@@ -10,6 +14,7 @@ export default function Contact() {
 
     return (
         <>
+        <div className="container-fluid bottom--bg">
             <form id="Contact" className="contact--container">
 
                 <label 
@@ -68,8 +73,35 @@ export default function Contact() {
                 <div className="button--container">
                     <button type="submit">Submit</button>
                 </div>
-                
             </form>
+                <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
+                        <div>
+                            <a href="#"><img className="footer--icon" src="../../src/assets/icon.png"/></a>
+                            <span className="footer--copyright">Brian Hartnett &copy; 2023</span>
+                        </div>
+                        <ul className="nav justify-content-end list-unstyled d-flex">
+                            <li className="ms-3">
+                                <a target="_blank" href="https://github.com/bju12290">
+                                    <FontAwesomeIcon className="faIcon--footer" icon={faGithubSquare} />
+                                </a>
+                            </li>
+                            <li className="ms-3">
+                                <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/">
+                                    <FontAwesomeIcon className="faIcon--footer" icon={faLinkedin} />
+                                </a>
+                            </li>
+                            <li className="ms-3">
+                                <a target="_blank">
+                                    <FontAwesomeIcon className="faIcon--footer" icon={faFile} />
+                                </a>
+                            </li>
+                        </ul>
+                </footer>
+            </div>
         </>
     )
 }
+
+
+                      
+                      

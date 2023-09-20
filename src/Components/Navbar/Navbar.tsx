@@ -1,9 +1,11 @@
 import React from 'react'
 import './Navbar.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
-
     React.useEffect(() => {
         window.addEventListener('scroll', () => {
             const topNavbar = document.querySelector('.top--navbar--container') as HTMLElement | null
@@ -33,12 +35,17 @@ export default function Navbar() {
     return (
         <div className="navbar--container">
             <div className="top--navbar--container">
-                <div className="navbar navbar--content">
-                    <span className="navbar--name">Brian Hartnett</span><span className="navbar--copyright">&copy; 2023</span>
-                    <a href="#About" onClick={() => scrollToSection('About')}>About</a>
-                    <a href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>Portfolio</a>
-                    <a href="#Contact" onClick={() => scrollToSection('Contact')}>Contact</a>
-                </div>
+                  <div className="navbar--content">
+                      <span className="navbar--name">Brian Hartnett</span><span className="navbar--copyright">&copy; 2023</span>
+                      <a href="#About" onClick={() => scrollToSection('About')}>About</a>
+                      <a href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>Portfolio</a>
+                      <a href="#Contact" onClick={() => scrollToSection('Contact')}>Contact</a>
+                  </div>
+                  <div className="navbar--icons--container">
+                      <a target="_blank" href="https://github.com/bju12290"><FontAwesomeIcon className="faIcon" icon={faGithubSquare} /></a>
+                      <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/"><FontAwesomeIcon className="faIcon" icon={faLinkedin} /></a>
+                      <a target="_blank"><FontAwesomeIcon className="faIcon" icon={faFile} /></a>
+                  </div>
             </div>
             <div className="menuToggle hidden">
                 <input id="menu" type="checkbox" />

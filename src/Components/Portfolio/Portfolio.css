@@ -30,7 +30,7 @@
     text-align: right;
 }
 
-img {
+.portfolio--img {
     max-width: 100%;
     min-width: 33vw;
     height: auto;

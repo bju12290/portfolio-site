@@ -1,16 +1,17 @@
-.contact--container {
-    width: 100vw;
-    height: 115vh;
-    display: flex;
-    flex-direction: column;
-    padding: 10vw;
-    color: var(--blue);
-    font-family: 'Press Start 2P', sans-serif;
-    gap: 15px;
+.bottom--bg {
     background-image: url(../../assets/background-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #162a8c;
+}
+
+.contact--container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw !important;
+    color: var(--blue);
+    font-family: 'Press Start 2P', sans-serif;
+    gap: 15px;
 }
 
 label {
@@ -63,8 +64,45 @@ button:active {
     color: var(--blue);
 }
 
+footer {
+    font-family: 'Press Start 2P', sans-serif;
+    color: var(--blue);
+    text-shadow: 2px 1px 1px rgb(27, 27, 27);
+}
+
+.footer--icon {
+    padding-bottom: 3px;
+    width: 30px;
+    height: auto;
+    filter: drop-shadow(1px 2px 2px var(--gray)) ;
+}
+
+.footer--copyright{
+    margin-left: 8px;
+    font-size: .8rem;
+}
+
+.faIcon--footer {
+    font-size: 30px;
+    color: var(--blue);
+    filter: drop-shadow(1px 2px 2px var(--gray)) ;
+}
+
+.faIcon--footer:hover {
+    filter: drop-shadow(0px 0px 10px var(--off-white));
+}
+
+
 @media only screen and (max-width: 900px) {
     button {
         font-size: .7rem !important;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    footer {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+

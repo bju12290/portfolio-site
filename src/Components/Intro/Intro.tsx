@@ -2,7 +2,7 @@ import './Intro.css'
 
 export default function Intro() {
 
-    const aboutMe = `Hey! My name's Brian and I'm a web developer and designer, and a self-employed business owner. In my free time I enjoy reading, learning, and playing video games!`
+    const aboutMe = `Hey! I'm Brian and I'm a web developer and a self-employed business owner. In my free time I enjoy reading, learning, and playing video games!`
 
     return (
     <>

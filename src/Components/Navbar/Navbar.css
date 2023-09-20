@@ -13,12 +13,14 @@
 }
 
 .top--navbar--container {
+    display: flex;
+    justify-content: space-between;
     font-family: 'Press Start 2P', sans-serif;
     font-size: .75rem;
     margin-top: 35px;
     margin-left: 35px;
     color: var(--off-white);
-    width: 50vw;
+    width: 95vw;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 1; 
     transform: translateY(0);
@@ -30,11 +32,32 @@
 }
 
 .navbar--content {
+    display: flex;
+    justify-content: space-between;
     font-size: .75rem;
+    width: 50vw;
+}
+
+.navbar--icons--container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 8vw;
+  font-size: 2rem;
+  color: var(--off-white);
 }
 
 .navbar a:hover {
-  text-shadow: 0px 0px 15px var(--off-white);
+  text-shadow: 0px 0px 25px var(--off-white);
+}
+
+.faIcon {
+  filter: drop-shadow(1px 2px 2px var(--gray)) ;
+}
+
+.faIcon:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 10px var(--off-white));
 }
 
 .menuToggle {
@@ -144,6 +167,11 @@
   .navbar--copyright {
     display: none;
   }
+
+  .navbar--icons--container {
+    margin-right: 5vw;
+  }
+  
 }
 
 @media only screen and (max-width: 900px) {
@@ -151,15 +179,20 @@
     display: none;
   }
 
-  .top--navbar--container {
+  .navbar--icons--container {
+    display: none;
+  }
+
+  .navbar--content {
     width: 90vw;
+    margin-right: 10vw;
   }
 }
 
 @media only screen and (max-width: 600px) {
 
-  .top--navbar--container {
+  .navbar--content {
     width: 90vw;
-    margin-left: 5vw;
+    margin-right:10 vw;
   }
 }

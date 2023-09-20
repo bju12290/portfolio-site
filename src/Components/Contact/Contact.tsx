@@ -5,6 +5,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import icon from '../../assets/icon.png'
+import { Link } from "react-router-dom";
 
 export default function Contact() {
     const [focusedInput, setFocusedInput] = React.useState<string | null>(null);
@@ -92,9 +93,9 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <a href="portfolio-site/resume">
+                                <Link to="/portfolio-site/resume">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faFile} />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                 </footer>

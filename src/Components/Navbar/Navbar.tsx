@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     React.useEffect(() => {
@@ -44,7 +45,7 @@ export default function Navbar() {
                   <div className="navbar--icons--container">
                       <a target="_blank" href="https://github.com/bju12290"><FontAwesomeIcon className="faIcon" icon={faGithubSquare} /></a>
                       <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/"><FontAwesomeIcon className="faIcon" icon={faLinkedin} /></a>
-                      <a href="/resume"><FontAwesomeIcon className="faIcon" icon={faFile} /></a>
+                      <Link to="/portfolio-site/resume"><FontAwesomeIcon className="faIcon" icon={faFile} /></Link>
                   </div>
             </div>
             <div className="menuToggle hidden">

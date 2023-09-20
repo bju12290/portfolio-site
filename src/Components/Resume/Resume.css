@@ -1,0 +1,38 @@
+.resume--container {
+    font-family: 'Press Start 2P', sans-serif;
+    color: var(--pink);
+    text-shadow: 3px 3px 2px rgb(27, 27, 27);
+    margin-top: -10vh;
+}
+
+.resume--container a {
+    text-decoration: none;
+    color: var(--pink)
+}
+
+.resume {
+    gap: 25px;
+    padding: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume--iframe {
+    margin-top: 0;
+    height: 90vh;
+    width: 50vw;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 5px;
+    border-color: var(--blue);
+    overflow-x: scroll;
+}
+
+.resume--download--button, .resume--back--arrow {
+    font-size: 25px;
+    color: var(--blue);
+    margin-right: 10px;
+}

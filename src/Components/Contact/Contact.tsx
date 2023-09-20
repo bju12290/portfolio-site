@@ -91,7 +91,7 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <a target="_blank">
+                                <a href="portfolio-site/resume">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faFile} />
                                 </a>
                             </li>

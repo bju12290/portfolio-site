@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
+import icon from '../../assets/icon.png'
 
 export default function Contact() {
     const [focusedInput, setFocusedInput] = React.useState<string | null>(null);
@@ -76,7 +77,7 @@ export default function Contact() {
             </form>
                 <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
                         <div>
-                            <a href="#"><img className="footer--icon" src="../../src/assets/icon.png"/></a>
+                            <a href="#"><img className="footer--icon" src={icon} /></a>
                             <span className="footer--copyright">Brian Hartnett &copy; 2023</span>
                         </div>
                         <ul className="nav justify-content-end list-unstyled d-flex">

@@ -1,23 +1,50 @@
 import React from 'react'
+import axios from 'axios'
+import icon from '../../assets/icon.png'
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
-import icon from '../../assets/icon.png'
 import { Link } from "react-router-dom";
+
 
 export default function Contact() {
     const [focusedInput, setFocusedInput] = React.useState<string | null>(null);
+
+    const [formData, setFormData] = React.useState({
+        name: '',
+        email: '',
+        message: '',
+    });
 
     const handleInputFocus = (inputId: string | null) => {
         setFocusedInput(inputId);
     };
 
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        axios.post('http://localhost:3000/api/submit', formData)
+            .then((response) => {
+                console.log(response.data)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+    }
+
     return (
         <>
         <div className="container-fluid bottom--bg">
-            <form id="Contact" className="contact--container">
+            <form onSubmit={handleSubmit} id="Contact" className="contact--container">
 
                 <label 
                     htmlFor="name" 
@@ -33,6 +60,8 @@ export default function Contact() {
                     name="name"
                     autoComplete="given-name"
                     required 
+                    value={formData.name}
+                        onChange={handleInputChange}
                         onFocus={() => handleInputFocus('name')}
                         onBlur={() => handleInputFocus(null)}
                 />
@@ -51,6 +80,8 @@ export default function Contact() {
                     name="email" 
                     autoComplete="given-email"
                     required 
+                    value={formData.email}
+                        onChange={handleInputChange}
                         onFocus={() => handleInputFocus('email')}
                         onBlur={() => handleInputFocus(null)}
                 />
@@ -68,6 +99,8 @@ export default function Contact() {
                     name="message" 
                     autoComplete="off"
                     required 
+                    value={formData.message}
+                        onChange={handleInputChange}
                         onFocus={() => handleInputFocus('message')}
                         onBlur={() => handleInputFocus(null)}>
                 </textarea>

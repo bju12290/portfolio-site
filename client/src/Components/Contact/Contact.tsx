@@ -8,6 +8,10 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 
+interface PopupState {
+    message: string;
+    type: string | null;
+  }
 
 export default function Contact() {
     const [focusedInput, setFocusedInput] = React.useState<string | null>(null);
@@ -17,6 +21,25 @@ export default function Contact() {
         email: '',
         message: '',
     });
+
+    const [popup, setPopup] = React.useState<PopupState | null>(null)
+
+    const showMessage = (message: string, type: string | null) => {
+        setPopup({ message, type })
+
+        setTimeout(() => {
+            setPopup(null)
+        }, 5000)
+    }
+
+    const PopupElement = () => {
+        if (popup?.message) {
+            return (
+            <div className={popup.type === "success" ? "success--popup" : "error--popup"}>{popup.message}</div>
+            )
+        }
+        return
+    }
 
     const handleInputFocus = (inputId: string | null) => {
         setFocusedInput(inputId);
@@ -35,9 +58,11 @@ export default function Contact() {
         axios.post('http://localhost:3000/api/submit', formData)
             .then((response) => {
                 console.log(response.data)
+                showMessage("Thanks for your submission!", "success")
             })
             .catch((error) => {
                 console.error(error)
+                showMessage("An error occured! Please try again!", "error")
             })
     }
 
@@ -108,6 +133,7 @@ export default function Contact() {
                 <div className="button--container">
                     <button type="submit">Submit</button>
                 </div>
+                <PopupElement/>
             </form>
                 <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
                         <div>

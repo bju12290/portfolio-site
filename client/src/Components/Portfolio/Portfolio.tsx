@@ -13,7 +13,7 @@ export default function Portfolio() {
                 <div>
                     <h3>E-Commerce Site</h3>
                     <div className="project-one-details">
-                        <p>A Fully Functional E-Commerce Site Built Using React, Bootstrap, Firebase, and the Stripe API. The site is left in test mode so you can experience full functionality without spending a dime. More info <a href="https://github.com/bju12290/e-commerce-site#usage">here</a>.</p> 
+                        <p>A Fully Functional E-Commerce Site Built Using React, Bootstrap, Firebase, and the Stripe API. The site is left in test mode so you can experience full functionality without spending a dime. More info <a href="https://github.com/bju12290/e-commerce-site#usage" target='_blank'>here</a>.</p> 
                         <p className="pink">Technologies Used:</p>
                         <div className="ms-5 d-flex flex-flow-column justify-content-start align-items-center gap-5">
                             <div className="d-flex flex-column gap-4 align-items-center">
@@ -30,12 +30,12 @@ export default function Portfolio() {
                             </div>
                         </div>
                         <div className="mt-5">
-                            <p className="blue"><a href="https://ecommerce-site-584f2.web.app/">Live Project</a> <span className="ms-5 me-5 pink">/</span> <a href="https://github.com/bju12290/e-commerce-site">GitHub</a></p>
+                            <p className="blue"><a href="https://ecommerce-site-584f2.web.app/" target='_blank'>Live Project</a> <span className="ms-5 me-5 pink">/</span> <a href="https://github.com/bju12290/e-commerce-site" target='_blank'>GitHub</a></p>
                         </div>
                         </div>
                 </div>
                 <div className="portfolio-img-container">
-                    <a href="https://ecommerce-site-584f2.web.app/"><img className="img-fluid portfolio--img" src={projectOne}></img></a>
+                    <a href="https://ecommerce-site-584f2.web.app/" target='_blank'><img className="img-fluid portfolio--img" src={projectOne}></img></a>
                 </div>
             </div>
             {/* <div className="project--left--container">

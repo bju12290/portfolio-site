@@ -27,6 +27,7 @@ export default function Intro() {
                         <li>Adobe Photoshop</li>
                         <li>Git</li>
                         <li>NPM</li>
+                        <li>Firebase</li>
                     </ul>
                 </div>
                 <div className="soft--skills--container">

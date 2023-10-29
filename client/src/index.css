@@ -8,6 +8,18 @@
   --gray: #333333;
 }
 
+.blue {
+  color: var(--blue)
+}
+
+.pink {
+  color: var(--pink)
+}
+
+a {
+  color: var(--blue) !important;
+}
+
 body {
   background-color: var(--dark-blue) !important;
   font-family: 'Audiowide', cursive;
@@ -19,4 +31,4 @@ body {
 .navbar--container a {
   all: unset;
 }
-
+  

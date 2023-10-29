@@ -55,7 +55,7 @@ export default function Contact() {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/api/submit', formData)
+        axios.post('https://us-central1-portfolio-site-1bc12.cloudfunctions.net/submitForm/api/submit', formData)
             .then((response) => {
                 console.log(response.data)
                 showMessage("Thanks for your submission!", "success")
@@ -152,7 +152,7 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <Link to="/portfolio-site/resume">
+                                <Link to="/resume">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faFile} />
                                 </Link>
                             </li>

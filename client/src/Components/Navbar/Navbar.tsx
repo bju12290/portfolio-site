@@ -45,7 +45,7 @@ export default function Navbar() {
                   <div className="navbar--icons--container">
                       <a target="_blank" href="https://github.com/bju12290"><FontAwesomeIcon className="faIcon" icon={faGithubSquare} /></a>
                       <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/"><FontAwesomeIcon className="faIcon" icon={faLinkedin} /></a>
-                      <Link to="/portfolio-site/resume"><FontAwesomeIcon className="faIcon" icon={faFile} /></Link>
+                      <Link to="/resume"><FontAwesomeIcon className="faIcon" icon={faFile} /></Link>
                   </div>
             </div>
             <div className="menuToggle hidden">

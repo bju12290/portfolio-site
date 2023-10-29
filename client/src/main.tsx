@@ -11,8 +11,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/portfolio-site" element={<App />}/>
-        <Route path="/portfolio-site/resume" element={<Resume />}/>
+        <Route path="/" element={<App />}/>
+        <Route path="/resume" element={<Resume />}/>
       </Routes>
     </Router>
   </React.StrictMode>,

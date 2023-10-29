@@ -4,6 +4,9 @@ const cors = require('cors')
 const nodemailer = require('nodemailer')
 const app = express()
 const port = 3000
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+admin.initializeApp();
 
 
 app.use(cors())
@@ -42,12 +45,14 @@ function sendEmail(name, email, message) {
     })
 }
 
-const server = app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-    if(process.env.EMAIL_USERNAME) { 
-        console.log('It is set!'); 
-    }
-    else { 
-        console.log('No set!'); 
-    }
-});
+// const server = app.listen(port, () => {
+//     console.log(`Server is running on port ${port}`);
+//     if(process.env.EMAIL_USERNAME) { 
+//         console.log('It is set!'); 
+//     }
+//     else { 
+//         console.log('No set!'); 
+//     }
+// });
+
+exports.submitForm = functions.https.onRequest(app);

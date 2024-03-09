@@ -1,24 +1,27 @@
+import AOS from 'aos';
+import {useEffect} from "react";
 import './Intro.css'
+import 'aos/dist/aos.css';
 
 export default function Intro() {
-
-    const aboutMe = `Hey! I'm Brian and I'm a web developer and a self-employed business owner. In my free time I enjoy reading, learning, and playing video games!`
-
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
     <>
     <div className=".container-fluid intro--container">
         <div className="greeting--container">
-            <h1 className="intro">Hi, I'm Brian!</h1>
-            <h2>I'm a Web <span className="designer">Designer</span><span className="&"> & </span><span className="developer">Developer</span></h2>
+            <h1 className="intro" data-aos="fade-up">Hi, I'm Brian!</h1>
+            <h2 data-aos="fade-up">I'm a Web <span className="designer">Designer</span><span className="&"> & </span><span className="developer">Developer</span></h2>
         </div>
         <div id="About" className="about--container">
-                <h3 className="about--header">About Me</h3>
-                <p className="about--paragraph">{aboutMe}</p>
+                <h3 className="about--header" data-aos="zoom-out">About Me</h3>
+                <p className="about--paragraph" data-aos="zoom-out">Hey! I'm Brian and I'm a web developer and a self-employed business owner. In my free time I enjoy reading, learning, and playing video games!</p>
             </div>
         <div className="skills--container">
             <div className="skills--lists">
                 <div className="technical--skills--container">
-                    <ul className="technical--skills--list">
+                    <ul className="technical--skills--list" data-aos="flip-left">
                     <h3>Technical Skills</h3>
                         <li>HTML & CSS</li>
                         <li>JavaScript</li>
@@ -31,7 +34,7 @@ export default function Intro() {
                         <li>Firebase</li>
                     </ul>
                 </div>
-                <div className="soft--skills--container">
+                <div className="soft--skills--container" data-aos="flip-right">
                 <ul className="soft--skills--list">
                 <h3>Soft Skills</h3>
                     <li>Passionate & Fast Learner</li>

@@ -1,17 +1,23 @@
 import './Portfolio.css'
 import projectOne from '../../assets/project-1.png'
+import {useEffect} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faVuejs } from '@fortawesome/free-brands-svg-icons'
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
 import { faStripeS } from '@fortawesome/free-brands-svg-icons'
 import { faFire } from '@fortawesome/free-solid-svg-icons'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Portfolio() {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
         <div>
         <div id="Portfolio" className="portfolio--container">
-            <div className="project--left--container">
+            <div className="project--left--container" data-aos="fade-left">
                 <div>
                     <h3>E-Commerce Site</h3>
                     <div className="project-one-details">
@@ -41,7 +47,7 @@ export default function Portfolio() {
                     <a href="https://ecommerce-site-584f2.web.app/" target='_blank'><img className="img-fluid portfolio--img" src={projectOne}></img></a>
                 </div>
             </div>
-             <div className="project--left--container">
+             <div className="project--left--container" data-aos="fade-right">
                 <div className="right--container--text">
                     <h3>Backloggr - Video Game Backlog Tracker</h3>
                     <p>Backloggr is a web app that gives users the ability to add their games and sort them by the "status" they hold in their backlog. Users can search for games and add them individually, or import their Steam Library by entering the profile URL associated with their account.</p>

@@ -55,6 +55,11 @@ button {
     border-radius: 5px !important;
     border-color: var(--blue);
     text-shadow: 1px 1px 1px var(--gray);
+    transition: transform .2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 button:active {

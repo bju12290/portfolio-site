@@ -2,6 +2,9 @@ import React from 'react'
 import axios from 'axios'
 import './Contact.css'
 import icon from '../../assets/icon.png'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -15,6 +18,10 @@ interface PopupState {
   }
 
 export default function Contact() {
+    useEffect(() => {
+        AOS.init();
+      }, [])
+      
     const [focusedInput, setFocusedInput] = React.useState<string | null>(null);
 
     const [formData, setFormData] = React.useState({
@@ -70,7 +77,7 @@ export default function Contact() {
     return (
         <>
         <div className="container-fluid bottom--bg">
-            <form onSubmit={handleSubmit} id="Contact" className="contact--container">
+            <form onSubmit={handleSubmit} id="Contact" className="contact--container" data-aos="zoom-out-up">
 
                 <label 
                     htmlFor="name" 

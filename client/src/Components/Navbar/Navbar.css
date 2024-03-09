@@ -72,7 +72,7 @@
 }
 
 .menuToggle a:hover {
-  color: var(--pink);
+  color: var(--pink) !important;
   cursor: pointer;
 }
 

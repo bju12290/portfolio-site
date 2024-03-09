@@ -8,10 +8,16 @@ function App() {
 
   return (
     <>
-      <Navbar />
+    <header>
+      <nav>
+        <Navbar />
+      </nav>
+    </header>
+    <main>
       <Intro />
       <Portfolio />
-      <Contact />
+    </main>
+    <Contact />
     </>
   )
 }

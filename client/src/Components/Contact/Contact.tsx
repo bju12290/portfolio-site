@@ -1,12 +1,13 @@
 import React from 'react'
 import axios from 'axios'
-import icon from '../../assets/icon.png'
 import './Contact.css'
+import icon from '../../assets/icon.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+
 
 interface PopupState {
     message: string;
@@ -135,7 +136,7 @@ export default function Contact() {
                 </div>
                 <PopupElement/>
             </form>
-                <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
+            <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
                         <div>
                             <a href="#"><img className="footer--icon" src={icon} /></a>
                             <span className="footer--copyright">Brian Hartnett &copy; 2023</span>

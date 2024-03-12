@@ -61,7 +61,7 @@ export default function Portfolio() {
                                     https://res.cloudinary.com/ddv5jvvvg/image/upload/w_1604/project-1_wltqyv.avif 1604w"
                             sizes="(min-width: 2260px) 802px, (min-width: 1120px) calc(38.57vw - 62px), (min-width: 920px) calc(72.22vw - 432px), (min-width: 400px) calc(91.6vw - 22px), calc(17.5vw + 258px)"
                             type="image/avif" />
-                        <img alt="E-Commerce Site Portfolio Project Home Page Preview Image" className="img-fluid portfolio--img"
+                        <img alt="E-Commerce Site Preview" className="img-fluid portfolio--img"
                         srcSet="https://res.cloudinary.com/ddv5jvvvg/image/upload/w_256/v1710107536/project-1_tvbwq5.png 256w,
                                 https://res.cloudinary.com/ddv5jvvvg/image/upload/w_808/v1710107536/project-1_tvbwq5.png 808w,
                                 https://res.cloudinary.com/ddv5jvvvg/image/upload/w_1130/v1710107536/project-1_tvbwq5.png 1130w,
@@ -115,7 +115,7 @@ export default function Portfolio() {
                                     https://res.cloudinary.com/ddv5jvvvg/image/upload/w_1390/vg-collection-tracker_cztlky_ygbsug.avif 1390w,
                                     https://res.cloudinary.com/ddv5jvvvg/image/upload/w_1604/vg-collection-tracker_cztlky_ygbsug.avif 1604w"
                                     sizes="(min-width: 2240px) 802px, (min-width: 920px) calc(39.77vw - 81px), (min-width: 400px) calc(91.6vw - 22px), calc(17.5vw + 258px)"/>
-                        <img alt="Backloggr Portfolio Project Collection Preview Image" className="img-fluid portfolio--img" 
+                        <img alt="Backloggr Collection Page Preview" className="img-fluid portfolio--img" 
                         srcSet="https://res.cloudinary.com/ddv5jvvvg/image/upload/w_256/v1709426134/vg-collection-tracker_cztlky.png 256w,
                                 https://res.cloudinary.com/ddv5jvvvg/image/upload/w_808/v1709426134/vg-collection-tracker_cztlky.png 808w,
                                 https://res.cloudinary.com/ddv5jvvvg/image/upload/w_1130/v1709426134/vg-collection-tracker_cztlky.png 1130w,

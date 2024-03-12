@@ -38,26 +38,27 @@ export default function Navbar() {
             <div className="top--navbar--container">
                   <div className="navbar--content">
                       <span className="navbar--name">Brian Hartnett</span><span className="navbar--copyright">&copy; 2023</span>
-                      <a href="#About" onClick={() => scrollToSection('About')}>About</a>
-                      <a href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>Portfolio</a>
-                      <a href="#Contact" onClick={() => scrollToSection('Contact')}>Contact</a>
+                      <a className="h-50" href="#About" onClick={() => scrollToSection('About')}>About</a>
+                      <a className="h-50" href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>Portfolio</a>
+                      <a className="h-50" href="#Contact" onClick={() => scrollToSection('Contact')}>Contact</a>
                   </div>
                   <div className="navbar--icons--container">
-                      <a target="_blank" href="https://github.com/bju12290"><FontAwesomeIcon className="faIcon" icon={faGithubSquare} /></a>
-                      <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/"><FontAwesomeIcon className="faIcon" icon={faLinkedin} /></a>
-                      <Link to="/resume"><FontAwesomeIcon className="faIcon" icon={faFile} /></Link>
+                      <a aria-label="Brian's Github Navbar Link" target="_blank" href="https://github.com/bju12290"><FontAwesomeIcon className="faIcon" icon={faGithubSquare} /></a>
+                      <a aria-label="Brian's LinkedIn Navbar Link" target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/"><FontAwesomeIcon className="faIcon" icon={faLinkedin} /></a>
+                      <Link aria-label="Brian's Resume Navbar Link" to="/resume"><FontAwesomeIcon className="faIcon" icon={faFile} /></Link>
                   </div>
             </div>
             <div className="menuToggle hidden">
-                <input id="menu" type="checkbox" />
+                <label className="hidden hidden--label" htmlFor="menu">Menu</label>
+                <input tabIndex={-1} id="menu" type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
                     <ul className="menu">
-                        <a href="#" onClick={() => scrollToSection('')}><li>Back to Top</li></a>
-                        <a href="#About" onClick={() => scrollToSection('About')}><li>About</li></a>
-                        <a href="#Portfolio" onClick={() => scrollToSection('Portfolio')}><li>Portfolio</li></a>
-                        <a href="#Contact" onClick={() => scrollToSection('Contact')}><li>Contact</li></a>
+                      <li><a tabIndex={-1} href="#" onClick={() => scrollToSection('')}>Back to Top</a></li>
+                      <li><a tabIndex={-1} href="#About" onClick={() => scrollToSection('About')}>About</a></li>
+                      <li><a tabIndex={-1} href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>Portfolio</a></li>
+                      <li><a tabIndex={-1} href="#Contact" onClick={() => scrollToSection('Contact')}>Contact</a></li>
                     </ul>    
             </div>
         </div>

@@ -1,5 +1,5 @@
 import AOS from 'aos';
-import {useEffect} from "react";
+import { useEffect } from "react";
 import './Intro.css'
 import 'aos/dist/aos.css';
 
@@ -21,13 +21,14 @@ export default function Intro() {
         <div className="skills--container">
             <div className="skills--lists">
                 <div className="technical--skills--container">
+                <h3>Technical Skills</h3>
                     <ul className="technical--skills--list" data-aos="flip-left">
-                    <h3>Technical Skills</h3>
                         <li>HTML & CSS</li>
                         <li>JavaScript</li>
                         <li>Python</li>
                         <li>Bootstrap</li>
                         <li>Adobe Photoshop</li>
+                        <li>Figma</li>
                         <li>Git</li>
                         <li>NPM</li>
                         <li>Node.js</li>
@@ -35,8 +36,8 @@ export default function Intro() {
                     </ul>
                 </div>
                 <div className="soft--skills--container" data-aos="flip-right">
-                <ul className="soft--skills--list">
                 <h3>Soft Skills</h3>
+                <ul className="soft--skills--list">
                     <li>Passionate & Fast Learner</li>
                     <li>Problem Solver</li>
                     <li>Clean Code</li>

@@ -1,3 +1,10 @@
 p {
   color: var(--off-white)
 }
+
+*:focus {
+  border: solid;
+  border-width: .25rem;
+  border-color: rgba(65, 182, 230, 0.15);
+  border-radius: 5px;
+}

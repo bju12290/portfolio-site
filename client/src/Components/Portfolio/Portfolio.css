@@ -63,7 +63,10 @@
     border-radius: 25px;
     box-shadow: 5px 5px 45px var(--pink);
 }
-
+.tailwind--logo {
+    max-width: 50px;
+    height: auto;
+}
 @media only screen and (max-width: 900px) {
     .portfolio--container {
         padding: 25px;

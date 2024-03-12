@@ -7,6 +7,13 @@
     text-shadow: 1px 2px 2px var(--gray);
 }
 
+.navbar--container a:focus {
+  border: solid;
+  border-width: .25rem;
+  border-color: rgba(65, 182, 230, 0.5);
+  border-radius: 5px;
+}
+
 .navbar--container a:hover {
   cursor: pointer;
   text-shadow: 0px 0px 4px var(--pink);
@@ -60,6 +67,10 @@
   filter: drop-shadow(0px 0px 10px var(--off-white));
 }
 
+.hidden-label{
+  display: none;
+}
+
 .menuToggle {
     text-shadow: 0px 0px 4px var(--blue);
     margin-left: 25px;
@@ -78,7 +89,7 @@
 
 .menuToggle input {
   position: absolute;
-  top: -7px;
+  top: 19px;
   left: -5px;
   width: 40px;
   height: 32px;

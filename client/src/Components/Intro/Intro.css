@@ -13,11 +13,17 @@
     flex-flow: column;
     padding-right: 42.5vw;
     padding-top: 45vh;
-    background-image: url(../../assets/background.png);
+    background-image: url(https://res.cloudinary.com/ddv5jvvvg/image/upload/v1710107502/background_rrq8ar.png);
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
 }
+
+@supports (background-image: url('example.webp')) {
+    .greeting--container {
+      background-image: url(https://res.cloudinary.com/ddv5jvvvg/image/upload/v1710107637/background_zgby10.webp);
+    }
+  }
 
 .about--container{
     height: 65vh;

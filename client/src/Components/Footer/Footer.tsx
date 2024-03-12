@@ -14,22 +14,22 @@ export default function footer() {
         <div className="container-fluid footer--bg">
                 <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
                         <div>
-                            <a href="#"><img className="footer--icon" src={icon} /></a>
+                            <a aria-label="Back to Top" href="#"><img className="footer--icon" src={icon} width="1024" height="1024"/></a>
                             <span className="footer--copyright">Brian Hartnett &copy; 2023</span>
                         </div>
                         <ul className="nav justify-content-end list-unstyled d-flex">
                             <li className="ms-3">
-                                <a target="_blank" href="https://github.com/bju12290">
+                                <a aria-label="Brian's Github Footer Link" target="_blank" href="https://github.com/bju12290">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faGithubSquare} />
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/">
+                                <a aria-label="Brian's LinkedIn Footer Link" target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faLinkedin} />
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <Link to="/resume">
+                                <Link aria-label="Brian's Resume Footer Link" to="/resume">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faFile} />
                                 </Link>
                             </li>

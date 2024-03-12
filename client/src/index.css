@@ -31,4 +31,11 @@ body {
 .navbar--container a {
   all: unset;
 }
+
+.a:focus {
+  border: solid;
+  border-width: .25rem;
+  border-color: rgba(var(--blue), 0.15);
+  border-radius: 5px;
+}
   

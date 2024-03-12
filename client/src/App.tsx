@@ -1,13 +1,15 @@
 import './App.css'
+import { Suspense, lazy } from 'react';
 import Navbar from './Components/Navbar/Navbar'
 import Intro from './Components/Intro/Intro'
-import Portfolio from './Components/Portfolio/Portfolio'
-import Contact from './Components/Contact/Contact'
+const Portfolio = lazy(() => import('./Components/Portfolio/Portfolio'))
+const Contact = lazy(() => import('./Components/Contact/Contact'))
 
 function App() {
 
   return (
     <>
+    <Suspense fallback={<div>Loading...</div>}/>
     <header>
       <nav>
         <Navbar />

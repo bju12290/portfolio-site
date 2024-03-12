@@ -1,9 +1,18 @@
+
+/* Fallback for browsers that don't support WebP or AVIF */
+
 .bottom--bg {
-    background-image: url(../../assets/background-2.png);
+    background-image: url(https://res.cloudinary.com/ddv5jvvvg/image/upload/v1710107511/background-2_hxazgg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #162a8c;
 }
+
+@supports (background-image: url('example.webp')) {
+    .bottom--bg {
+      background-image: url(https://res.cloudinary.com/ddv5jvvvg/image/upload/v1710107627/background-2_qhnkj9.webp);
+    }
+  }
 
 .contact--container {
     display: flex;
@@ -21,6 +30,7 @@ label {
 
 textarea {
     min-height: 40vh;
+    resize: none !important;
 }
 
 input, textarea {

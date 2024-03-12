@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 import './Contact.css'
-import icon from '../../assets/icon.png'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from "react";
@@ -145,22 +144,34 @@ export default function Contact() {
             </form>
             <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
                         <div>
-                            <a href="#"><img className="footer--icon" src={icon} /></a>
+                            <a href="#">
+                            <picture>
+                                <source 
+                                    srcSet="https://res.cloudinary.com/ddv5jvvvg/image/upload/w_30/icon_ospulh.webp 30w"
+                                        sizes="30px"
+                                    type="image/webp" />
+                                <source 
+                                    srcSet="https://res.cloudinary.com/ddv5jvvvg/image/upload/w_30/icon_a0qr34.avif 30w"
+                                        sizes="30px"
+                                    type="image/avif" />
+                                <img alt="BPH Dev Icon" className="footer--icon" src="https://res.cloudinary.com/ddv5jvvvg/image/upload/w_30/v1710107525/icon_wg4dtn.png" width="1024" height="1024"/>
+                            </picture>
+                                </a>
                             <span className="footer--copyright">Brian Hartnett &copy; 2023</span>
                         </div>
                         <ul className="nav justify-content-end list-unstyled d-flex">
                             <li className="ms-3">
-                                <a target="_blank" href="https://github.com/bju12290">
+                                <a aria-label="Brian's Github Footer Link" target="_blank" href="https://github.com/bju12290">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faGithubSquare} />
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <a target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/">
+                                <a aria-label="Brian's LinkedIn Footer Link" target="_blank" href="https://www.linkedin.com/in/brian-hartnett-jr-557436165/">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faLinkedin} />
                                 </a>
                             </li>
                             <li className="ms-3">
-                                <Link to="/resume">
+                                <Link aria-label="Brian's Resume Footer Link" to="/resume">
                                     <FontAwesomeIcon className="faIcon--footer" icon={faFile} />
                                 </Link>
                             </li>

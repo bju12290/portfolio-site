@@ -15,7 +15,7 @@ export default function footer() {
                 <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3">
                         <div>
                             <a aria-label="Back to Top" href="#"><img className="footer--icon" src={icon} width="1024" height="1024"/></a>
-                            <span className="footer--copyright">Brian Hartnett &copy; 2023</span>
+                            <span className="footer--copyright">Brian Hartnett &copy; 2025</span>
                         </div>
                         <ul className="nav justify-content-end list-unstyled d-flex">
                             <li className="ms-3">

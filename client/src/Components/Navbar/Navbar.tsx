@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="navbar--container">
             <div className="top--navbar--container">
                   <div className="navbar--content">
-                      <span className="navbar--name">Brian Hartnett</span><span className="navbar--copyright">&copy; 2023</span>
+                      <span className="navbar--name">Brian Hartnett <span className="navbar--copyright">&copy; 2025</span></span>
                       <a className="h-50" href="#About" onClick={() => scrollToSection('About')}>About</a>
                       <a className="h-50" href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>Portfolio</a>
                       <a className="h-50" href="#Contact" onClick={() => scrollToSection('Contact')}>Contact</a>

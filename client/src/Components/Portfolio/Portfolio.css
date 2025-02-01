@@ -35,7 +35,7 @@
 }
 
 .icon {
-    height: 50px;
+    height: 40px;
     color: var(--blue)
 }
 
@@ -44,15 +44,15 @@
 }
 
 .par-1 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .par-2 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .par-3 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .portfolio--img {

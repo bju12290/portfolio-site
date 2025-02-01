@@ -157,7 +157,7 @@ export default function Contact() {
                                 <img alt="BPH Dev Icon" className="footer--icon" src="https://res.cloudinary.com/ddv5jvvvg/image/upload/w_30/v1710107525/icon_wg4dtn.png" width="1024" height="1024"/>
                             </picture>
                                 </a>
-                            <span className="footer--copyright">Brian Hartnett &copy; 2023</span>
+                            <span className="footer--copyright">Brian Hartnett &copy; 2025</span>
                         </div>
                         <ul className="nav justify-content-end list-unstyled d-flex">
                             <li className="ms-3">

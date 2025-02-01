@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:wght@300;400;500;700&family=Press+Start+2P&display=swap');
 
+html, body {
+  overflow-x: hidden;
+}
+
 :root, body {
   --blue: #41B6E6;
   --pink: #DB3EB1;
